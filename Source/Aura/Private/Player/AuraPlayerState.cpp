@@ -12,8 +12,6 @@ AAuraPlayerState::AAuraPlayerState()
 	AbilitySystemComponent->SetIsReplicated(true);
 	AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Mixed);
 
-	AbilitySystemComponent->InitAbilityActorInfo(this, );
-
 	AttributeSet = CreateDefaultSubobject<UAuraAttributeSet>("AttributeSet");
 	// how often the server will try to update clients; higher number = checks for updates more often
 	NetUpdateFrequency = 100.f;
